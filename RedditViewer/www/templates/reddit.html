@@ -1,10 +1,15 @@
 <ion-view title="Reddit">
-    <ion-content padding="true" class="has-header">
-        <ion-list></ion-list>
-        <ion-list>
-            <ion-item>Item 1</ion-item>
-            <ion-item>Item 2</ion-item>
-            <ion-item>Item 3</ion-item>
-        </ion-list>
-    </ion-content>
+        <ion-content scroll="true" padding="true" class="has-header">
+            <button class="button" ng-click="populateList()" style="width:100%">
+        Load Posts
+      </button>
+                <ion-list>
+                    <ion-item ng-repeat="post in posts" class="item-text-wrap">
+                        <i class="title">{{post.title}}</i>
+                        <br>
+                        <b align="left" class="score">{{post.score}}</b>
+                        <div align="right" class="name">{{post.name}}</div>
+                    </ion-item>
+                </ion-list>
+        </ion-content>
 </ion-view>

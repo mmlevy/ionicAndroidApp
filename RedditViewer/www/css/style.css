@@ -5,3 +5,17 @@
     align-items: center;
     justify-content: center;
 }
+.score {
+    font-size: 150%;
+    float: left;
+}
+.title {
+    color: darkblue;
+    width: 100%;
+    font-size: 125%;
+    text-emphasis: true;
+}
+.name {
+    color: darkgreen;
+    text-align: right;
+}
